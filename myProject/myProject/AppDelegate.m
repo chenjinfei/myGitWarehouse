@@ -8,7 +8,15 @@
 
 #import "AppDelegate.h"
 
+#import "CJFTabBarViewController.h"
+#import "DrawerViewController.h"
+#import "LeftViewController.h"
+
 @interface AppDelegate ()
+
+@property (nonatomic, strong) DrawerViewController *drawerVc;
+@property (nonatomic, strong) UIViewController *mainVc;
+@property (nonatomic, strong) LeftViewController *leftVc;
 
 @end
 
@@ -16,7 +24,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    self.mainVc = [[CJFTabBarViewController alloc]init];
+    
+    self.leftVc = [[LeftViewController alloc]init];
+    
+    self.drawerVc = [DrawerViewController drawerWithMainVc:self.mainVc leftVc:self.leftVc leftWidth:300];
+    
+    self.window.rootViewController = self.drawerVc;
+    
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
