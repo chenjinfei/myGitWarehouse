@@ -22,21 +22,17 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    
+    // 主视图控制器
     self.mainVc = [[CJFTabBarViewController alloc]init];
-    
+    // 左视图控制器
     self.leftVc = [[LeftViewController alloc]init];
-    
-    self.drawerVc = [DrawerViewController drawerWithMainVc:self.mainVc leftVc:self.leftVc leftWidth:300];
-    
+    // 创建抽屉视图作为根视图控制器
+    self.drawerVc = [DrawerViewController drawerWithMainVc:self.mainVc leftVc:self.leftVc leftWidth:SCREEN_WIDTH-80];
     self.window.rootViewController = self.drawerVc;
-    
     [self.window makeKeyAndVisible];
-    
     
     return YES;
 }
