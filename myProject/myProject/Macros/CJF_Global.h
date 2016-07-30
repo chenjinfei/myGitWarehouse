@@ -261,7 +261,7 @@ description:__VA_ARGS__];                             \
 
 
 
-#pragma mark 单例化一个类
+#pragma mark lzq:单例化一个类
 #define SYNTHESIZE_SINGLETON_FOR_CLASS(classname) \
 \
 static classname *shared##classname = nil; \
