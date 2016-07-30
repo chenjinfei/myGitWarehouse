@@ -42,6 +42,7 @@
 		37D65F6C1D4B0B7E0009E5D7 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		37D65F6E1D4B24B40009E5D7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		37D65F6F1D4B26590009E5D7 /* CJF_Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJF_Global.h; sourceTree = "<group>"; };
+		37D65F701D4C443B0009E5D7 /* Macros_API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros_API.h; sourceTree = "<group>"; };
 		7D4A82400A66DCF61765665D /* Pods-myProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.release.xcconfig"; sourceTree = "<group>"; };
 		F0CA29CB2AE0325E178B8EEA /* Pods-myProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -253,6 +254,7 @@
 			children = (
 				37D65F6F1D4B26590009E5D7 /* CJF_Global.h */,
 				37D65F6E1D4B24B40009E5D7 /* PrefixHeader.pch */,
+				37D65F701D4C443B0009E5D7 /* Macros_API.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";

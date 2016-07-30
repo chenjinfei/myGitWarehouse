@@ -29,17 +29,17 @@
 #   define DLog(...)
 #endif
 
-
+//重写NSLog,Debug模式下打印日志和当前行数
 #pragma mark 重写NSLog,Debug模式下打印日志和当前行数
 #if DEBUG
-#define NSLog(FORMAT, ...) fprintf(stderr,"\nfunction:%s line:%d content:%s\n", __FUNCTION__, __LINE__, ［NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define NSLog(FORMAT, ...) fprintf(stderr,"\nfunction:%s line:%d content:%s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
 #define NSLog(FORMAT, ...) nil
 #endif
 
 #pragma mark DEBUG  模式下打印日志,当前行 并弹出一个警告
 #ifdef DEBUG
-#   define ULog(fmt, ...)  { UIAlertView *alert = ［UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"%s\n [Line %d] ", __PRETTY_FUNCTION__, __LINE__] message:[NSString stringWithFormat:fmt, ##__VA_ARGS__]  delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil]; [alert show]; }
+#   define ULog(fmt, ...)  { UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"%s\n [Line %d] ", __PRETTY_FUNCTION__, __LINE__] message:[NSString stringWithFormat:fmt, ##__VA_ARGS__]  delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil]; [alert show]; }
 #else
 #   define ULog(...)
 #endif
@@ -60,17 +60,17 @@
 
 #endif
 
-#pragma mark  The general purpose logger. This ignores logging levels.
+// The general purpose logger. This ignores logging levels.
 #ifdef ITTDEBUG
 #define ITTDPRINT(xx, ...)  NSLog(@"%s(%d): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #else
 #define ITTDPRINT(xx, ...)  ((void)0)
 #endif
 
-#pragma mark 打印当前方法的名称
+// Prints the current method's name.
 #define ITTDPRINTMETHODNAME() ITTDPRINT(@"%s", __PRETTY_FUNCTION__)
 
-#pragma mark  Log-level based logging macros.
+// Log-level based logging macros.
 #if ITTLOGLEVEL_ERROR <= ITTMAXLOGLEVEL
 #define ITTDERROR(xx, ...)  ITTDPRINT(xx, ##__VA_ARGS__)
 #else
@@ -101,7 +101,7 @@ ITTDPRINT(xx, ##__VA_ARGS__); \
 #define ITTAssert(condition, ...)                                       \
 do {                                                                      \
 if (!(condition)) {                                                     \
-［NSAssertionHandler currentHandler]                                  \
+[[NSAssertionHandler currentHandler]                                  \
 handleFailureInFunction:[NSString stringWithUTF8String:__PRETTY_FUNCTION__] \
 file:[NSString stringWithUTF8String:__FILE__]  \
 lineNumber:__LINE__                                  \
@@ -120,15 +120,15 @@ description:__VA_ARGS__];                             \
 #define someThing (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)? ipad: iphone
 
 #pragma mark 获取系统版本
-#define IOS_VERSION ［[UIDevice currentDevice] systemVersion] floatValue]
-#define CurrentSystemVersion ［UIDevice currentDevice] systemVersion]
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#define CurrentSystemVersion [[UIDevice currentDevice] systemVersion]
 
 #pragma mark 获取当前语言
-#define CurrentLanguage (［NSLocale preferredLanguages] objectAtIndex:0])
+#define CurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
 
 #pragma mark 判断是否 Retina屏、设备是否%fhone 5、是否是iPad
-#define isRetina ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), ［UIScreen mainScreen] currentMode].size) : NO)
-#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), ［UIScreen mainScreen] currentMode].size) : NO)
+#define isRetina ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
 #define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 #pragma mark 判断设备的操做系统是不是ios7
@@ -193,13 +193,13 @@ description:__VA_ARGS__];                             \
 //----------------------图片----------------------------
 
 #pragma mark 读取本地图片
-#define LOADIMAGE(file,ext) [UIImage imageWithContentsOfFile:［NSBundle mainBundle]pathForResource:file ofType:ext］
+#define LOADIMAGE(file,ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:ext]]
 
 #pragma mark 定义UIImage对象
-#define IMAGE(A) [UIImage imageWithContentsOfFile:［NSBundle mainBundle] pathForResource:A ofType:nil］
+#define IMAGE(A) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:A ofType:nil]]
 
 #pragma mark 定义UIImage对象
-#define ImageNamed(_pointer) [UIImage imageNamed:[UIUtil imageName:_pointer］
+#define ImageNamed(_pointer) [UIImage imageNamed:[UIUtil imageName:_pointer]]
 
 //建议使用前两种宏定义,性能高于后者
 //----------------------图片----------------------------
@@ -207,20 +207,21 @@ description:__VA_ARGS__];                             \
 
 
 //----------------------颜色类---------------------------
-#pragma mark  rgb颜色转换（16进制->10进制）
+#pragma mark 颜色类
+// rgb颜色转换（16进制->10进制）
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
-#pragma mark 带有RGBA的颜色设置
+//带有RGBA的颜色设置
 #define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 
-#pragma mark  获取RGB颜色
+// 获取RGB颜色
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 #define RGB(r,g,b) RGBA(r,g,b,1.0f)
 
-#pragma mark 背景色
+//背景色
 #define BACKGROUND_COLOR [UIColor colorWithRed:242.0/255.0 green:236.0/255.0 blue:231.0/255.0 alpha:1.0]
 
-#pragma mark 清除背景色
+//清除背景色
 #define CLEARCOLOR [UIColor clearColor]
 
 #pragma mark - color functions
@@ -232,30 +233,24 @@ description:__VA_ARGS__];                             \
 
 
 //----------------------其他----------------------------
-
-#pragma mark 方正黑体简体字体定义
+#pragma mark 其他
+//方正黑体简体字体定义
 #define FONT(F) [UIFont fontWithName:@"FZHTJW--GB1-0" size:F]
 
-
-#pragma mark 定义一个API
-#define APIURL                @"http://xxxxx/"
-#pragma mark 登录API
-#define APILogin              [APIURL stringByAppendingString:@"Login"]
-
-#pragma mark 设置View的tag属性
+//设置View的tag属性
 #define VIEWWITHTAG(_OBJECT, _TAG)    [_OBJECT viewWithTag : _TAG]
-#pragma mark 程序的本地化,引用国际化的文件
+//程序的本地化,引用国际化的文件
 #define MyLocal(x, ...) NSLocalizedString(x, nil)
 
-#pragma mark G－C－D
+//G－C－D
 #define BACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
 #define MAIN(block) dispatch_async(dispatch_get_main_queue(),block)
 
-#pragma mark NSUserDefaults 实例化
+//NSUserDefaults 实例化
 #define USER_DEFAULT [NSUserDefaults standardUserDefaults]
 
 
-#pragma mark 由角度获取弧度 有弧度获取角度
+//由角度获取弧度 有弧度获取角度
 #define degreesToRadian(x) (M_PI * (x) / 180.0)
 #define radianToDegrees(radian) (radian*180.0)/(M_PI)
 
@@ -272,7 +267,7 @@ static classname *shared##classname = nil; \
 { \
 if (shared##classname == nil) \
 { \
-shared##classname = ［self alloc] init]; \
+shared##classname = [[self alloc] init]; \
 } \
 } \
 \
