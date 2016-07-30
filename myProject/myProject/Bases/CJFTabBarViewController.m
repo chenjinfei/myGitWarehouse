@@ -8,8 +8,9 @@
 
 #import "CJFTabBarViewController.h"
 
-#import "OneViewController.h"
-#import "TwoViewController.h"
+#import "HabitViewController.h"
+#import "DiscoverViewController.h"
+#import "MessageViewController.h"
 
 @interface CJFTabBarViewController ()
 
@@ -20,10 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UINavigationController *oneNav = [self buildViewControllerWithClassName:@"OneViewController" title:@"栏目一" image:@"img_normal" selectedImage:@"img_selected"];
-    UINavigationController *twoNav = [self buildViewControllerWithClassName:@"TwoViewController" title:@"栏目二" image:@"img_normal" selectedImage:@"img_selected"];
+    UINavigationController *habitNav = [self buildViewControllerWithClassName:@"HabitViewController" title:@"习惯" image:@"habit_32" selectedImage:@"habit_32"];
+    UINavigationController *discoverNav = [self buildViewControllerWithClassName:@"DiscoverViewController" title:@"发现" image:@"discover_32" selectedImage:@"discover_32"];
+    UINavigationController *messageNav = [self buildViewControllerWithClassName:@"MessageViewController" title:@"信息" image:@"msg3_32" selectedImage:@"msg3_32"];
     
-    self.viewControllers = @[oneNav, twoNav];
+    self.viewControllers = @[habitNav, discoverNav, messageNav];
     
     
 }
