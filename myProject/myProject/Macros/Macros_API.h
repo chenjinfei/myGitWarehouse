@@ -25,7 +25,7 @@
 #define APILogin                   [APIUser stringByAppendingString:@"login"]
 // 退出登录
 #define APILogout                   [APIUser stringByAppendingString:@"logout"]
-// 用户信息更新
+// 用户信息更新
 #define APIUserUpdate                  [APIUser stringByAppendingString:@"update"]
 // 我的联系人、关注我的人
 #define APIFollowedList                [APIUser stringByAppendingString:@"getFollowedList"]
