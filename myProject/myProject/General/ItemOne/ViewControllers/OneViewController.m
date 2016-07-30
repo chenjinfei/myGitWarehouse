@@ -23,8 +23,13 @@
     
     AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
     
-    NSDictionary *parameters = @{@"user_id":@1850878};
-    [session POST:@"http://api.idothing.com/zhongzi/v2.php/Habit/getHabitList" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    NSDictionary *parameters = @{
+                                 @"detail":@1850878,
+                                 @"flag":@0,
+                                 @"prop_num":@10,
+                                 @"user_id":@1850878
+                                 };
+    [session POST:APIAllHotNotes parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"ok === %@", responseObject);
         ULog(@"%@", responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
