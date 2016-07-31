@@ -17,6 +17,10 @@
 #define APIURL                         @"http://api.idothing.com/zhongzi/v2.php/"
 
 
+// 用户使用协议  GET
+#define APIQuestion       @"http://api.idothing.com/website/Question/userInfo.html"
+
+
 
 // == 用户API ==
 #define APIUser                        [APIURL stringByAppendingString:@"User/"]
@@ -41,6 +45,25 @@
 #define APIUserInfo                    [APIUser stringByAppendingString:@"getUserInfo"]
 // 设备编号
 #define APIUserDeviceNumber            [APIUser stringByAppendingString:@"getUserDeviceNumber"]
+// 检查手机号是否已经注册
+#define APIIsTelExist                  [APIUser stringByAppendingString:@"checkTelExist"]
+// 通过手机号码注册
+#define APIRegisterWithTel             [APIUser stringByAppendingString:@"registerWithTel"]
+
+
+
+
+// == 用户协议 ==
+#define APIQuestionUserInfo     @"http://api.idothing.com/website/Question/userInfo.html"
+
+
+
+
+// == 分享 ==
+#define APIShare            [APIURL stringByAppendingString:@"Share/"]
+
+// 分享内容
+#define APIShareContent     [APIShare stringByAppendingString:@"getShareContent"]
 
 
 
@@ -76,7 +99,7 @@
 // == 消息 ==
 #define APIMessage         [APIURL stringByAppendingString:@"Message/"]
 
-// 新通知
+// 新消息
 #define APIRegHX           [APIMessage stringByAppendingString:@"regHX"]
 
 
