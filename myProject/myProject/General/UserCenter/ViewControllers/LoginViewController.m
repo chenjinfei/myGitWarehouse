@@ -8,7 +8,14 @@
 
 #import "LoginViewController.h"
 
+#import "RegisterByPhoneViewController.h"
+#import "UserManager.h"
+
+
 @interface LoginViewController ()
+
+@property (strong, nonatomic) IBOutlet UITextField *phoneNumber;
+@property (strong, nonatomic) IBOutlet UITextField *password;
 
 @end
 
@@ -16,22 +23,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    // 帐号：18716304714
+    // 密码：abc1234567890
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+// 登录
+- (IBAction)loginClick:(UIButton *)sender {
+    NSDictionary *parameters = @{
+                                 @"account": [NSNumber numberWithInteger:[self.phoneNumber.text integerValue]],
+                                 @"password": self.password.text,
+                                 @"account_type": @1
+                                 };
+    [[UserManager manager] loginWithInfo:parameters success:^(NSDictionary *userData) {
+        [self dismissViewControllerAnimated:YES completion:^{
+            NSLog(@"登录成功");
+        }];
+    } failure:^(NSError *error) {
+        NSLog(@"%@", error);
+    }];
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+// 注册
+- (IBAction)registerClick:(UIButton *)sender {
+    RegisterByPhoneViewController *registerVc = [[RegisterByPhoneViewController alloc]init];
+    [self presentViewController:registerVc animated:YES completion:^{
+        
+    }];
 }
-*/
+
+- (IBAction)emailLoginClick:(UIButton *)sender {
+}
 
 @end

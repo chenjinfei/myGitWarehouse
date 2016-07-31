@@ -39,6 +39,11 @@
 		37D65FAF1D4CACFC0009E5D7 /* HabitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D65FAD1D4CACFC0009E5D7 /* HabitViewController.xib */; };
 		37D65FB31D4CAD0A0009E5D7 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D65FB11D4CAD0A0009E5D7 /* MessageViewController.m */; };
 		37D65FB41D4CAD0A0009E5D7 /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D65FB21D4CAD0A0009E5D7 /* MessageViewController.xib */; };
+		37D65FB81D4CDA8F0009E5D7 /* RegisterByPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D65FB61D4CDA8F0009E5D7 /* RegisterByPhoneViewController.m */; };
+		37D65FB91D4CDA8F0009E5D7 /* RegisterByPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D65FB71D4CDA8F0009E5D7 /* RegisterByPhoneViewController.xib */; };
+		37D65FBD1D4CE2D50009E5D7 /* RegisterDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D65FBB1D4CE2D50009E5D7 /* RegisterDataViewController.m */; };
+		37D65FBE1D4CE2D50009E5D7 /* RegisterDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D65FBC1D4CE2D50009E5D7 /* RegisterDataViewController.xib */; };
+		37D65FC11D4CEEF90009E5D7 /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D65FC01D4CEEF90009E5D7 /* UserManager.m */; };
 		99EA567675CEDB321D7506A9 /* libPods-myProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F79141CC0CCDE1B2482F143 /* libPods-myProject.a */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +96,14 @@
 		37D65FB01D4CAD0A0009E5D7 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		37D65FB11D4CAD0A0009E5D7 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		37D65FB21D4CAD0A0009E5D7 /* MessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		37D65FB51D4CDA8F0009E5D7 /* RegisterByPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterByPhoneViewController.h; sourceTree = "<group>"; };
+		37D65FB61D4CDA8F0009E5D7 /* RegisterByPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterByPhoneViewController.m; sourceTree = "<group>"; };
+		37D65FB71D4CDA8F0009E5D7 /* RegisterByPhoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterByPhoneViewController.xib; sourceTree = "<group>"; };
+		37D65FBA1D4CE2D50009E5D7 /* RegisterDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterDataViewController.h; sourceTree = "<group>"; };
+		37D65FBB1D4CE2D50009E5D7 /* RegisterDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterDataViewController.m; sourceTree = "<group>"; };
+		37D65FBC1D4CE2D50009E5D7 /* RegisterDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterDataViewController.xib; sourceTree = "<group>"; };
+		37D65FBF1D4CEEF90009E5D7 /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
+		37D65FC01D4CEEF90009E5D7 /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
 		7D4A82400A66DCF61765665D /* Pods-myProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.release.xcconfig"; sourceTree = "<group>"; };
 		F0CA29CB2AE0325E178B8EEA /* Pods-myProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +210,8 @@
 		37D65F481D4B088D0009E5D7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				37D65FBF1D4CEEF90009E5D7 /* UserManager.h */,
+				37D65FC01D4CEEF90009E5D7 /* UserManager.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -402,6 +417,12 @@
 				37D65F751D4C8CA20009E5D7 /* LoginViewController.h */,
 				37D65F761D4C8CA20009E5D7 /* LoginViewController.m */,
 				37D65F771D4C8CA20009E5D7 /* LoginViewController.xib */,
+				37D65FB51D4CDA8F0009E5D7 /* RegisterByPhoneViewController.h */,
+				37D65FB61D4CDA8F0009E5D7 /* RegisterByPhoneViewController.m */,
+				37D65FB71D4CDA8F0009E5D7 /* RegisterByPhoneViewController.xib */,
+				37D65FBA1D4CE2D50009E5D7 /* RegisterDataViewController.h */,
+				37D65FBB1D4CE2D50009E5D7 /* RegisterDataViewController.m */,
+				37D65FBC1D4CE2D50009E5D7 /* RegisterDataViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -615,11 +636,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D65FBE1D4CE2D50009E5D7 /* RegisterDataViewController.xib in Resources */,
 				37D65F901D4C927E0009E5D7 /* msg3_32.png in Resources */,
 				37D65F791D4C8CA20009E5D7 /* LoginViewController.xib in Resources */,
 				37D65F881D4C927E0009E5D7 /* add_32.png in Resources */,
 				37D65F921D4C927E0009E5D7 /* search_32.png in Resources */,
 				37D65F931D4C927E0009E5D7 /* setup_32.png in Resources */,
+				37D65FB91D4CDA8F0009E5D7 /* RegisterByPhoneViewController.xib in Resources */,
 				37D65F8D1D4C927E0009E5D7 /* message_32.png in Resources */,
 				37D65F3E1D4AFBFF0009E5D7 /* LaunchScreen.storyboard in Resources */,
 				37D65F8B1D4C927E0009E5D7 /* habit_32.png in Resources */,
@@ -694,6 +717,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D65FBD1D4CE2D50009E5D7 /* RegisterDataViewController.m in Sources */,
 				37D65F781D4C8CA20009E5D7 /* LoginViewController.m in Sources */,
 				37D65FB31D4CAD0A0009E5D7 /* MessageViewController.m in Sources */,
 				37D65FA91D4CACEB0009E5D7 /* DiscoverViewController.m in Sources */,
@@ -701,6 +725,8 @@
 				37D65F671D4B0A1C0009E5D7 /* CJFTabBarViewController.m in Sources */,
 				37D65F611D4B095A0009E5D7 /* DrawerViewController.m in Sources */,
 				37D65F641D4B09B40009E5D7 /* LeftViewController.m in Sources */,
+				37D65FC11D4CEEF90009E5D7 /* UserManager.m in Sources */,
+				37D65FB81D4CDA8F0009E5D7 /* RegisterByPhoneViewController.m in Sources */,
 				37D65F6A1D4B0B730009E5D7 /* OneViewController.m in Sources */,
 				37D65FAE1D4CACFC0009E5D7 /* HabitViewController.m in Sources */,
 				37D65F331D4AFBFF0009E5D7 /* AppDelegate.m in Sources */,
