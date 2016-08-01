@@ -11,6 +11,7 @@
 #import "CJFTabBarViewController.h"
 #import "DrawerViewController.h"
 #import "LeftViewController.h"
+#import "startGifView.h"
 
 @interface AppDelegate ()
 
@@ -31,9 +32,22 @@
     self.leftVc = [[LeftViewController alloc]init];
     // 创建抽屉视图作为根视图控制器
     self.drawerVc = [DrawerViewController drawerWithMainVc:self.mainVc leftVc:self.leftVc leftWidth:SCREEN_WIDTH-80];
+    
+    // 如果是app第一次启动就加载启动页,如果不是,则直接进入首页
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"everLaunched"]) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"everLaunched"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLaunch"];
+    }
+    else{
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"firstLaunch"];
+    }
+    // 判断是否第一次
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"]) {
+        startGifView *startDifView = [[startGifView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+        [self.drawerVc.view addSubview:startDifView];
+    }
     self.window.rootViewController = self.drawerVc;
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 

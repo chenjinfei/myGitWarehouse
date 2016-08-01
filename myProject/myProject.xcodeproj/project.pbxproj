@@ -39,6 +39,8 @@
 		37D65FAF1D4CACFC0009E5D7 /* HabitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D65FAD1D4CACFC0009E5D7 /* HabitViewController.xib */; };
 		37D65FB31D4CAD0A0009E5D7 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D65FB11D4CAD0A0009E5D7 /* MessageViewController.m */; };
 		37D65FB41D4CAD0A0009E5D7 /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D65FB21D4CAD0A0009E5D7 /* MessageViewController.xib */; };
+		3FC2504A1D4CD09A00A89AE7 /* startGifView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC250491D4CD09A00A89AE7 /* startGifView.m */; settings = {ASSET_TAGS = (); }; };
+		3FC2504E1D4CD67500A89AE7 /* start.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3FC2504D1D4CD67500A89AE7 /* start.gif */; settings = {ASSET_TAGS = (); }; };
 		99EA567675CEDB321D7506A9 /* libPods-myProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F79141CC0CCDE1B2482F143 /* libPods-myProject.a */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +93,9 @@
 		37D65FB01D4CAD0A0009E5D7 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		37D65FB11D4CAD0A0009E5D7 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		37D65FB21D4CAD0A0009E5D7 /* MessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		3FC250481D4CD09A00A89AE7 /* startGifView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = startGifView.h; sourceTree = "<group>"; };
+		3FC250491D4CD09A00A89AE7 /* startGifView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = startGifView.m; sourceTree = "<group>"; };
+		3FC2504D1D4CD67500A89AE7 /* start.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = start.gif; sourceTree = "<group>"; };
 		7D4A82400A66DCF61765665D /* Pods-myProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.release.xcconfig"; sourceTree = "<group>"; };
 		F0CA29CB2AE0325E178B8EEA /* Pods-myProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +171,8 @@
 			children = (
 				37D65F311D4AFBFF0009E5D7 /* AppDelegate.h */,
 				37D65F321D4AFBFF0009E5D7 /* AppDelegate.m */,
+				3FC250481D4CD09A00A89AE7 /* startGifView.h */,
+				3FC250491D4CD09A00A89AE7 /* startGifView.m */,
 				37D65F5F1D4B095A0009E5D7 /* DrawerViewController.h */,
 				37D65F601D4B095A0009E5D7 /* DrawerViewController.m */,
 				37D65F621D4B09B40009E5D7 /* LeftViewController.h */,
@@ -347,6 +354,7 @@
 				37D65F851D4C927E0009E5D7 /* setup_32.png */,
 				37D65F861D4C927E0009E5D7 /* time_32.png */,
 				37D65F871D4C927E0009E5D7 /* user_32.png */,
+				3FC2504D1D4CD67500A89AE7 /* start.gif */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -618,6 +626,7 @@
 				37D65F901D4C927E0009E5D7 /* msg3_32.png in Resources */,
 				37D65F791D4C8CA20009E5D7 /* LoginViewController.xib in Resources */,
 				37D65F881D4C927E0009E5D7 /* add_32.png in Resources */,
+				3FC2504E1D4CD67500A89AE7 /* start.gif in Resources */,
 				37D65F921D4C927E0009E5D7 /* search_32.png in Resources */,
 				37D65F931D4C927E0009E5D7 /* setup_32.png in Resources */,
 				37D65F8D1D4C927E0009E5D7 /* message_32.png in Resources */,
@@ -694,6 +703,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC2504A1D4CD09A00A89AE7 /* startGifView.m in Sources */,
 				37D65F781D4C8CA20009E5D7 /* LoginViewController.m in Sources */,
 				37D65FB31D4CAD0A0009E5D7 /* MessageViewController.m in Sources */,
 				37D65FA91D4CACEB0009E5D7 /* DiscoverViewController.m in Sources */,

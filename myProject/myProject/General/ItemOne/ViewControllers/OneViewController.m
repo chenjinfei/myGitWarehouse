@@ -24,14 +24,8 @@
     AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
     
     NSDictionary *parameters = @{
-//                                 @"detail":@1850878,
-//                                 @"flag":@0,
-//                                 @"user_id":@1850878
-//                                 APIAllHotNotes
                                  @"detail":@1,
                                  @"flag":@0,
-//                                 @"mine_id":@1850878,
-//                                 @"page":@0,
                                  @"prop_num":@10,
                                  @"user_id":@1850878
                                  };
