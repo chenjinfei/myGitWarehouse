@@ -39,6 +39,12 @@
 		37D65FAF1D4CACFC0009E5D7 /* HabitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D65FAD1D4CACFC0009E5D7 /* HabitViewController.xib */; };
 		37D65FB31D4CAD0A0009E5D7 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D65FB11D4CAD0A0009E5D7 /* MessageViewController.m */; };
 		37D65FB41D4CAD0A0009E5D7 /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D65FB21D4CAD0A0009E5D7 /* MessageViewController.xib */; };
+		3F0529341D4CC4D100847FB1 /* huo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F0529311D4CC4D100847FB1 /* huo2.jpg */; settings = {ASSET_TAGS = (); }; };
+		3F0529351D4CC4D100847FB1 /* huo4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F0529321D4CC4D100847FB1 /* huo4.jpg */; settings = {ASSET_TAGS = (); }; };
+		3F0529361D4CC4D100847FB1 /* huo7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F0529331D4CC4D100847FB1 /* huo7.jpg */; settings = {ASSET_TAGS = (); }; };
+		3F05293F1D4CCB5300847FB1 /* HotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F05293D1D4CCB5300847FB1 /* HotTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		3F0529401D4CCB5300847FB1 /* HotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F05293E1D4CCB5300847FB1 /* HotTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		3F0529431D4CCD0900847FB1 /* HotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0529421D4CCD0900847FB1 /* HotModel.m */; settings = {ASSET_TAGS = (); }; };
 		99EA567675CEDB321D7506A9 /* libPods-myProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F79141CC0CCDE1B2482F143 /* libPods-myProject.a */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +97,14 @@
 		37D65FB01D4CAD0A0009E5D7 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		37D65FB11D4CAD0A0009E5D7 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		37D65FB21D4CAD0A0009E5D7 /* MessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		3F0529311D4CC4D100847FB1 /* huo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = huo2.jpg; sourceTree = "<group>"; };
+		3F0529321D4CC4D100847FB1 /* huo4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = huo4.jpg; sourceTree = "<group>"; };
+		3F0529331D4CC4D100847FB1 /* huo7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = huo7.jpg; sourceTree = "<group>"; };
+		3F05293C1D4CCB5300847FB1 /* HotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotTableViewCell.h; path = myProject/General/Habit/ViewControllers/Views/HotTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		3F05293D1D4CCB5300847FB1 /* HotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotTableViewCell.m; path = myProject/General/Habit/ViewControllers/Views/HotTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		3F05293E1D4CCB5300847FB1 /* HotTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HotTableViewCell.xib; path = myProject/General/Habit/ViewControllers/Views/HotTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		3F0529411D4CCD0900847FB1 /* HotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotModel.h; path = myProject/General/Habit/ViewControllers/Views/HotModel.h; sourceTree = SOURCE_ROOT; };
+		3F0529421D4CCD0900847FB1 /* HotModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotModel.m; path = myProject/General/Habit/ViewControllers/Views/HotModel.m; sourceTree = SOURCE_ROOT; };
 		7D4A82400A66DCF61765665D /* Pods-myProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.release.xcconfig"; sourceTree = "<group>"; };
 		F0CA29CB2AE0325E178B8EEA /* Pods-myProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -481,6 +495,7 @@
 		37D65F9E1D4CAC2F0009E5D7 /* Habit */ = {
 			isa = PBXGroup;
 			children = (
+				3F0529301D4CC4B300847FB1 /* lzc_Test */,
 				37D65F9F1D4CAC2F0009E5D7 /* Models */,
 				37D65FA01D4CAC2F0009E5D7 /* ViewControllers */,
 				37D65FA11D4CAC2F0009E5D7 /* Views */,
@@ -491,6 +506,8 @@
 		37D65F9F1D4CAC2F0009E5D7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3F0529411D4CCD0900847FB1 /* HotModel.h */,
+				3F0529421D4CCD0900847FB1 /* HotModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -508,6 +525,9 @@
 		37D65FA11D4CAC2F0009E5D7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3F05293C1D4CCB5300847FB1 /* HotTableViewCell.h */,
+				3F05293D1D4CCB5300847FB1 /* HotTableViewCell.m */,
+				3F05293E1D4CCB5300847FB1 /* HotTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -544,6 +564,16 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3F0529301D4CC4B300847FB1 /* lzc_Test */ = {
+			isa = PBXGroup;
+			children = (
+				3F0529311D4CC4D100847FB1 /* huo2.jpg */,
+				3F0529321D4CC4D100847FB1 /* huo4.jpg */,
+				3F0529331D4CC4D100847FB1 /* huo7.jpg */,
+			);
+			path = lzc_Test;
 			sourceTree = "<group>";
 		};
 		B897738F2E6D1B5709641409 /* Pods */ = {
@@ -625,6 +655,8 @@
 				37D65F8B1D4C927E0009E5D7 /* habit_32.png in Resources */,
 				37D65F3B1D4AFBFF0009E5D7 /* Assets.xcassets in Resources */,
 				37D65F5E1D4B088D0009E5D7 /* Readme.rtf in Resources */,
+				3F0529361D4CC4D100847FB1 /* huo7.jpg in Resources */,
+				3F0529351D4CC4D100847FB1 /* huo4.jpg in Resources */,
 				37D65FAA1D4CACEB0009E5D7 /* DiscoverViewController.xib in Resources */,
 				37D65F8F1D4C927E0009E5D7 /* msg2_32.png in Resources */,
 				37D65F951D4C927E0009E5D7 /* user_32.png in Resources */,
@@ -635,7 +667,9 @@
 				37D65FB41D4CAD0A0009E5D7 /* MessageViewController.xib in Resources */,
 				37D65F8E1D4C927E0009E5D7 /* msg_32.png in Resources */,
 				37D65F941D4C927E0009E5D7 /* time_32.png in Resources */,
+				3F0529401D4CCB5300847FB1 /* HotTableViewCell.xib in Resources */,
 				37D65FAF1D4CACFC0009E5D7 /* HabitViewController.xib in Resources */,
+				3F0529341D4CC4D100847FB1 /* huo2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,9 +736,11 @@
 				37D65F611D4B095A0009E5D7 /* DrawerViewController.m in Sources */,
 				37D65F641D4B09B40009E5D7 /* LeftViewController.m in Sources */,
 				37D65F6A1D4B0B730009E5D7 /* OneViewController.m in Sources */,
+				3F0529431D4CCD0900847FB1 /* HotModel.m in Sources */,
 				37D65FAE1D4CACFC0009E5D7 /* HabitViewController.m in Sources */,
 				37D65F331D4AFBFF0009E5D7 /* AppDelegate.m in Sources */,
 				37D65F301D4AFBFF0009E5D7 /* main.m in Sources */,
+				3F05293F1D4CCB5300847FB1 /* HotTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

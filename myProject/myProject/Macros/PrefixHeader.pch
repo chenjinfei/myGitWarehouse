@@ -15,5 +15,10 @@
 #pragma mark === cjf API ===
 #import "Macros_API.h"
 
+#pragma mark === lzc XRCarouselView ===
+#import <XRCarouselView.h>
+
+#pragma mark === lzc AFNetworking ===
+#import <AFNetworking.h>
 
 #endif /* PrefixHeader_pch */
