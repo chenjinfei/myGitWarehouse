@@ -79,16 +79,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-// 退出登录
-- (IBAction)logoutClick:(UIButton *)sender {
-    [[UserManager manager] logoutSuccess:^(NSDictionary *responseObject) {
-        LoginViewController *loginVc = [[LoginViewController alloc]init];
-        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:loginVc animated:YES completion:^{
-            NSLog(@"登出成功");
-        }];
-    } failure:^(NSError *error) {
-        ULog(@"%@", error);
-    }];
-}
-
 @end
