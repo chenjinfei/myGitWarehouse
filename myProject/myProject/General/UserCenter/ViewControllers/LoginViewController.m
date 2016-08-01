@@ -54,7 +54,35 @@
     }];
 }
 
+
+// 邮箱登录
 - (IBAction)emailLoginClick:(UIButton *)sender {
 }
+
+// QQ帐号登录
+- (IBAction)qqLoginClick:(UIButton *)sender {
+}
+
+// 微信帐号登录
+- (IBAction)weixinLoginClick:(UIButton *)sender {
+}
+
+// 微博帐号登录
+- (IBAction)sinaLoginClick:(UIButton *)sender {
+    //    UMSocialSnsPlatform *snsPlatform = [UMSocialSnsPlatformManager getSocialPlatformWithName:UMShareToSina];
+    //    
+    //    snsPlatform.loginClickHandler(self,[UMSocialControllerService defaultControllerService],YES,^(UMSocialResponseEntity *response){
+    //        
+    //        //          获取微博用户名、uid、token等
+    //        
+    //        if (response.responseCode == UMSResponseCodeSuccess) {
+    //            
+    //            NSDictionary *dict = [UMSocialAccountManager socialAccountDictionary];
+    //            UMSocialAccountEntity *snsAccount = [[UMSocialAccountManager socialAccountDictionary] valueForKey:snsPlatform.platformName];
+    //            NSLog(@"\nusername = %@,\n usid = %@,\n token = %@ iconUrl = %@,\n unionId = %@,\n thirdPlatformUserProfile = %@,\n thirdPlatformResponse = %@ \n, message = %@",snsAccount.userName,snsAccount.usid,snsAccount.accessToken,snsAccount.iconURL, snsAccount.unionId, response.thirdPlatformUserProfile, response.thirdPlatformResponse, response.message);
+    //            
+    //        }});
+}
+
 
 @end
