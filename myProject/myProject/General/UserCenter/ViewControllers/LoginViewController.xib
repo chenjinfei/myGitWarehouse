@@ -53,9 +53,41 @@
                         <action selector="registerClick:" destination="-1" eventType="touchUpInside" id="RgP-UJ-k5L"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgB-CT-wrB">
+                    <rect key="frame" x="87" y="483" width="32" height="32"/>
+                    <state key="normal" title="QQ" image="qq_32.png"/>
+                    <connections>
+                        <action selector="qqLoginClick:" destination="-1" eventType="touchUpInside" id="Ea9-WU-AIs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUk-P5-amS">
+                    <rect key="frame" x="171" y="483" width="32" height="32"/>
+                    <state key="normal" title="QQ" image="weixin_32.png"/>
+                    <connections>
+                        <action selector="weixinLoginClick:" destination="-1" eventType="touchUpInside" id="wyV-pF-Egc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgT-PC-qcy">
+                    <rect key="frame" x="255" y="483" width="32" height="32"/>
+                    <state key="normal" title="QQ" image="sina_32.png"/>
+                    <connections>
+                        <action selector="sinaLoginClick:" destination="-1" eventType="touchUpInside" id="od4-bH-mfb"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Habit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Jk-Fp-BI4">
+                    <rect key="frame" x="87" y="142" width="200" height="66"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="55"/>
+                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.97612179487179485" green="0.97612179487179485" blue="0.97612179487179485" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>
+    <resources>
+        <image name="qq_32.png" width="32" height="32"/>
+        <image name="sina_32.png" width="32" height="32"/>
+        <image name="weixin_32.png" width="32" height="32"/>
+    </resources>
 </document>

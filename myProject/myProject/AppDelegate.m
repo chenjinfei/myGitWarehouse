@@ -15,6 +15,8 @@
 #import "LoginViewController.h"
 #import "UserManager.h"
 
+#import "UMSocial.h"
+
 @interface AppDelegate ()
 
 @property (nonatomic, strong) DrawerViewController *drawerVc;
@@ -41,6 +43,9 @@
     
     // 检查是否已经登录
     [self checkLogin];
+    
+    // 设置友盟AppKey
+    [UMSocialData setAppKey:AppKeyUmeng];
     
     return YES;
 }

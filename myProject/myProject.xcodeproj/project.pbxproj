@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37036C1E1D4EE07C00057AE8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37036C1D1D4EE07C00057AE8 /* SystemConfiguration.framework */; };
+		37036C201D4EE09A00057AE8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37036C1F1D4EE09A00057AE8 /* ImageIO.framework */; };
+		37036C221D4EE10600057AE8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37036C211D4EE10600057AE8 /* Security.framework */; };
+		37036C241D4EE13300057AE8 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37036C231D4EE13300057AE8 /* libiconv.tbd */; };
+		37036C261D4EE14600057AE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37036C251D4EE14600057AE8 /* CoreGraphics.framework */; };
+		37036C281D4EE15300057AE8 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37036C271D4EE15300057AE8 /* libsqlite3.0.tbd */; };
+		37036C2A1D4EE16300057AE8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37036C291D4EE16300057AE8 /* CoreTelephony.framework */; };
+		37036C2C1D4EE17100057AE8 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37036C2B1D4EE17100057AE8 /* libstdc++.6.0.9.tbd */; };
+		37036C2E1D4EE17C00057AE8 /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37036C2D1D4EE17C00057AE8 /* libz.1.1.3.tbd */; };
 		37D65F301D4AFBFF0009E5D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D65F2F1D4AFBFF0009E5D7 /* main.m */; };
 		37D65F331D4AFBFF0009E5D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D65F321D4AFBFF0009E5D7 /* AppDelegate.m */; };
 		37D65F3B1D4AFBFF0009E5D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D65F3A1D4AFBFF0009E5D7 /* Assets.xcassets */; };
@@ -44,11 +53,24 @@
 		37D65FBD1D4CE2D50009E5D7 /* RegisterDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D65FBB1D4CE2D50009E5D7 /* RegisterDataViewController.m */; };
 		37D65FBE1D4CE2D50009E5D7 /* RegisterDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D65FBC1D4CE2D50009E5D7 /* RegisterDataViewController.xib */; };
 		37D65FC11D4CEEF90009E5D7 /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D65FC01D4CEEF90009E5D7 /* UserManager.m */; };
+		37D65FC51D4E6A2D0009E5D7 /* qq_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 37D65FC21D4E6A2D0009E5D7 /* qq_32.png */; };
+		37D65FC61D4E6A2D0009E5D7 /* sina_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 37D65FC31D4E6A2D0009E5D7 /* sina_32.png */; };
+		37D65FC71D4E6A2D0009E5D7 /* weixin_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 37D65FC41D4E6A2D0009E5D7 /* weixin_32.png */; };
 		99EA567675CEDB321D7506A9 /* libPods-myProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F79141CC0CCDE1B2482F143 /* libPods-myProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F79141CC0CCDE1B2482F143 /* libPods-myProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37036C1D1D4EE07C00057AE8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		37036C1F1D4EE09A00057AE8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		37036C211D4EE10600057AE8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		37036C231D4EE13300057AE8 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		37036C251D4EE14600057AE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		37036C271D4EE15300057AE8 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		37036C291D4EE16300057AE8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		37036C2B1D4EE17100057AE8 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		37036C2D1D4EE17C00057AE8 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
+		37036C2F1D4EE41600057AE8 /* AppKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppKey.h; sourceTree = "<group>"; };
 		37D65F2B1D4AFBFF0009E5D7 /* myProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D65F2F1D4AFBFF0009E5D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37D65F311D4AFBFF0009E5D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +126,9 @@
 		37D65FBC1D4CE2D50009E5D7 /* RegisterDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterDataViewController.xib; sourceTree = "<group>"; };
 		37D65FBF1D4CEEF90009E5D7 /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
 		37D65FC01D4CEEF90009E5D7 /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
+		37D65FC21D4E6A2D0009E5D7 /* qq_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq_32.png; sourceTree = "<group>"; };
+		37D65FC31D4E6A2D0009E5D7 /* sina_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sina_32.png; sourceTree = "<group>"; };
+		37D65FC41D4E6A2D0009E5D7 /* weixin_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weixin_32.png; sourceTree = "<group>"; };
 		7D4A82400A66DCF61765665D /* Pods-myProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.release.xcconfig"; sourceTree = "<group>"; };
 		F0CA29CB2AE0325E178B8EEA /* Pods-myProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +138,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37036C2E1D4EE17C00057AE8 /* libz.1.1.3.tbd in Frameworks */,
+				37036C2C1D4EE17100057AE8 /* libstdc++.6.0.9.tbd in Frameworks */,
+				37036C2A1D4EE16300057AE8 /* CoreTelephony.framework in Frameworks */,
+				37036C281D4EE15300057AE8 /* libsqlite3.0.tbd in Frameworks */,
+				37036C261D4EE14600057AE8 /* CoreGraphics.framework in Frameworks */,
+				37036C241D4EE13300057AE8 /* libiconv.tbd in Frameworks */,
+				37036C221D4EE10600057AE8 /* Security.framework in Frameworks */,
+				37036C201D4EE09A00057AE8 /* ImageIO.framework in Frameworks */,
+				37036C1E1D4EE07C00057AE8 /* SystemConfiguration.framework in Frameworks */,
 				99EA567675CEDB321D7506A9 /* libPods-myProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +157,15 @@
 		1439B289F087A5A29F0C62E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				37036C2D1D4EE17C00057AE8 /* libz.1.1.3.tbd */,
+				37036C2B1D4EE17100057AE8 /* libstdc++.6.0.9.tbd */,
+				37036C291D4EE16300057AE8 /* CoreTelephony.framework */,
+				37036C271D4EE15300057AE8 /* libsqlite3.0.tbd */,
+				37036C251D4EE14600057AE8 /* CoreGraphics.framework */,
+				37036C231D4EE13300057AE8 /* libiconv.tbd */,
+				37036C211D4EE10600057AE8 /* Security.framework */,
+				37036C1F1D4EE09A00057AE8 /* ImageIO.framework */,
+				37036C1D1D4EE07C00057AE8 /* SystemConfiguration.framework */,
 				2F79141CC0CCDE1B2482F143 /* libPods-myProject.a */,
 			);
 			name = Frameworks;
@@ -323,6 +366,7 @@
 				37D65F6F1D4B26590009E5D7 /* CJF_Global.h */,
 				37D65F6E1D4B24B40009E5D7 /* PrefixHeader.pch */,
 				37D65F701D4C443B0009E5D7 /* Macros_API.h */,
+				37036C2F1D4EE41600057AE8 /* AppKey.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -348,6 +392,9 @@
 		37D65F591D4B088D0009E5D7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				37D65FC21D4E6A2D0009E5D7 /* qq_32.png */,
+				37D65FC31D4E6A2D0009E5D7 /* sina_32.png */,
+				37D65FC41D4E6A2D0009E5D7 /* weixin_32.png */,
 				37D65F7A1D4C927E0009E5D7 /* add_32.png */,
 				37D65F7B1D4C927E0009E5D7 /* addContact_32.png */,
 				37D65F7C1D4C927E0009E5D7 /* discover_32.png */,
@@ -638,15 +685,18 @@
 			files = (
 				37D65FBE1D4CE2D50009E5D7 /* RegisterDataViewController.xib in Resources */,
 				37D65F901D4C927E0009E5D7 /* msg3_32.png in Resources */,
+				37D65FC51D4E6A2D0009E5D7 /* qq_32.png in Resources */,
 				37D65F791D4C8CA20009E5D7 /* LoginViewController.xib in Resources */,
 				37D65F881D4C927E0009E5D7 /* add_32.png in Resources */,
 				37D65F921D4C927E0009E5D7 /* search_32.png in Resources */,
 				37D65F931D4C927E0009E5D7 /* setup_32.png in Resources */,
 				37D65FB91D4CDA8F0009E5D7 /* RegisterByPhoneViewController.xib in Resources */,
+				37D65FC71D4E6A2D0009E5D7 /* weixin_32.png in Resources */,
 				37D65F8D1D4C927E0009E5D7 /* message_32.png in Resources */,
 				37D65F3E1D4AFBFF0009E5D7 /* LaunchScreen.storyboard in Resources */,
 				37D65F8B1D4C927E0009E5D7 /* habit_32.png in Resources */,
 				37D65F3B1D4AFBFF0009E5D7 /* Assets.xcassets in Resources */,
+				37D65FC61D4E6A2D0009E5D7 /* sina_32.png in Resources */,
 				37D65F5E1D4B088D0009E5D7 /* Readme.rtf in Resources */,
 				37D65FAA1D4CACEB0009E5D7 /* DiscoverViewController.xib in Resources */,
 				37D65F8F1D4C927E0009E5D7 /* msg2_32.png in Resources */,
