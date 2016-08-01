@@ -6,4 +6,5 @@ pod 'AFNetworking'
 pod 'MJRefresh'
 pod 'Masonry'
 pod 'XRCarouselView'
+pod 'UMengSocialCOM', '~> 5.2.1'
 end
