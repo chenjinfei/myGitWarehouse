@@ -9,6 +9,9 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#pragma mark 第三方的引用
+#import <AFNetworking.h>
+
 #pragma mark === cjf 宏定义 ===
 #import "CJF_Global.h"
 

@@ -12,6 +12,9 @@
 #import "DrawerViewController.h"
 #import "LeftViewController.h"
 
+#import "LoginViewController.h"
+#import "UserManager.h"
+
 @interface AppDelegate ()
 
 @property (nonatomic, strong) DrawerViewController *drawerVc;
@@ -31,10 +34,24 @@
     self.leftVc = [[LeftViewController alloc]init];
     // 创建抽屉视图作为根视图控制器
     self.drawerVc = [DrawerViewController drawerWithMainVc:self.mainVc leftVc:self.leftVc leftWidth:SCREEN_WIDTH-80];
+    // 设置根视图
     self.window.rootViewController = self.drawerVc;
+    // 显示
     [self.window makeKeyAndVisible];
     
+    // 检查是否已经登录
+    [self checkLogin];
+    
     return YES;
+}
+
+
+-(void)checkLogin {
+    if (![[UserManager manager] checkLogin]) {
+        LoginViewController *loginVc = [[LoginViewController alloc]init];
+        loginVc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [[DrawerViewController shareDrawer] presentViewController:loginVc animated:YES completion:nil];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
